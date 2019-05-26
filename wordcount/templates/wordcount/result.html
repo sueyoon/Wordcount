@@ -1,0 +1,23 @@
+<style>
+
+    @font-face { font-family: 'UhBeemysen';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeemysen.woff') format('woff');
+font-weight: normal; font-style: normal; 
+}
+@font-face { font-family: 'HangeulNuri-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+*{
+    font-family: 'HangeulNuri-Bold';
+}
+
+</style>
+
+<h1>결과창입니당</h1>
+
+원문: {{total}}
+<br>
+<br>
+<br>
+
+단어 카운트
+{% for word, num in dic %}
+{{word}} : {{num}}<br>
+{% endfor %}
